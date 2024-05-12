@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 19.76%;
+    min-width: 290px;
+    border-right: 3px solid rgba(0, 22, 22, 0.4);
+    height: 100%;
+}
+
+#main-doc {
+    margin-left: 302.5px;
+    display: flex;
+    flex-direction: column;
+    width: 75.5%;
+    padding-left: 35.5px;
+    padding-top: 4px;
+}
+
+nav > header {
+    margin: 0;
+    font-size: 28.8px;
+    font-weight: 400;
+    line-height: 43.2px;
+    padding-inline: 32.4px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    /* position: relative; */
+    width: 100%;
+}
+
+#navbar a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(77, 78, 83);
+    text-decoration: none;
+    padding-block: 10px;
+    padding-left: 30px;
+    display: block;
+    width: 100%;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section > header {
+    font-size: 28.8px;
+    font-weight: 400;
+    line-height: 43.2px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#Introduction header {
+    margin-block-start: 23.904px;
+}
+
+p, li {
+    font-size: 15.36px;
+    font-weight: 400;
+    line-height: 23.04px;
+    color: rgb(77, 78, 83);
+}
+
+article {
+    padding-left: 15px;
+}
+
+article > ul {
+    padding-inline-start: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+code {
+    font-family: monospace;
+    font-size: 12.48px;
+    font-weight: 400;
+    line-height: 24.96px;
+    color: rgb(77, 78, 83);
+    background-color: rgb(247,247,247);
+    padding-block: 15px;
+    padding-inline: 10px;
+    margin-left: 10px;
+    display: block;
+    width: 97.4%;
+}
+
+@media (min-height: 100px) and (max-height: 700px) {
+    #navbar ul {
+        max-height: 450px;
+        overflow-y: scroll;
+    }
+}
